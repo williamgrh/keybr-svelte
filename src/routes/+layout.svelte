@@ -1,53 +1,50 @@
 <script>
-	import Header from './Header.svelte';
+	import Sidenav from '$lib/Sidenav.svelte';
 	import './styles.css';
 </script>
 
 <div class="app">
-	<Header />
-
 	<main>
 		<slot />
 	</main>
 
-	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-	</footer>
+	<Sidenav />
+
+	<div class="topbar" />
+	<div class="sidebar" />
 </div>
 
 <style>
 	.app {
-		display: flex;
-		flex-direction: column;
+		display: grid;
 		min-height: 100vh;
+		grid-template-areas:
+			'topbar topbar topbar'
+			'sidebar main nav';
+		grid-template-columns: auto 1fr auto;
+		grid-template-rows: auto 1fr;
 	}
 
 	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
+		grid-area: main;
+		position: relative;
 	}
 
-	footer {
+	.topbar,
+	.sidebar {
 		display: flex;
-		flex-direction: column;
 		justify-content: center;
-		align-items: center;
-		padding: 12px;
+		margin: 0;
+		padding: 1rem;
 	}
 
-	footer a {
-		font-weight: bold;
+	.topbar {
+		grid-area: topbar;
+		border-bottom: 1px solid var(--color-separator);
 	}
 
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
+	.sidebar {
+		grid-area: sidebar;
+		border-right: 1px solid var(--color-separator);
 	}
 </style>
