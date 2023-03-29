@@ -11,7 +11,6 @@
 	import MultiplayerIcon from '$lib/images/multiplayer.svelte';
 	import LayoutsIcon from '$lib/images/layouts.svelte';
 	import TextToolsIcon from '$lib/images/text-tools.svelte';
-	import FontSize from '$lib/images/font-size.svelte';
 </script>
 
 <nav>
