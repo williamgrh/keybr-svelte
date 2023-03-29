@@ -16,7 +16,7 @@
 <nav>
 	<div class="nav-items">
 		<div class="nav-item sign-in">
-			<a href="/account" title="Sign‑in for an online account.">
+			<a href="/" title="Sign‑in for an online account.">
 				<SignInIcon />
 				<span>Sign-In</span>
 			</a>
@@ -36,43 +36,41 @@
 		</div>
 
 		<div class="nav-item">
-			<a href="/profile" title="See the detailed statistics about your learning progress."
+			<a href="/" title="See the detailed statistics about your learning progress."
 				><ProfileIcon /><span>Profile</span></a
 			>
 		</div>
 
 		<div class="nav-item">
-			<a href="/typing-test" title="Take a typing speed test."
-				><TypingTestIcon /><span>Typing Test</span></a
-			>
+			<a href="/" title="Take a typing speed test."><TypingTestIcon /><span>Typing Test</span></a>
 		</div>
 
 		<div class="nav-item">
-			<a href="/help" title="Get the instructions on how to use this application."
+			<a href="/" title="Get the instructions on how to use this application."
 				><HelpIcon /><span>Help</span></a
 			>
 		</div>
 
 		<div class="nav-item">
-			<a href="/high-scores" title="See the high score table featuring the fastest typists."
+			<a href="/" title="See the high score table featuring the fastest typists."
 				><HighScoresIcon /><span>High Scores</span></a
 			>
 		</div>
 
 		<div class="nav-item">
-			<a href="/multiplayer" title="Compete against other players in an online multiplayer game."
+			<a href="/" title="Compete against other players in an online multiplayer game."
 				><MultiplayerIcon /><span>Multiplayer</span></a
 			>
 		</div>
 
 		<div class="nav-item">
-			<a href="/layouts" title="Compare the efficiency of different keyboard layouts."
+			<a href="/" title="Compare the efficiency of different keyboard layouts."
 				><LayoutsIcon /><span>Layouts</span></a
 			>
 		</div>
 
 		<div class="nav-item">
-			<a href="/text-tools" title="Count the characters and words in your text."
+			<a href="/" title="Count the characters and words in your text."
 				><TextToolsIcon /><span>Text Tools</span></a
 			>
 		</div>
@@ -91,17 +89,16 @@
 					href="https://groups.google.com/g/keybr"
 					target="groups"
 					title="Discuss on Google Groups.">Google Groups</a
-				><a href="/terms-of-service" title="Terms of service.">Terms of Service</a><a
-					class="ejjh7pEsz_"
-					href="/privacy-policy"
+				><a href="/" title="Terms of service.">Terms of Service</a><a
+					href="/"
 					title="Privacy policy.">Privacy Policy</a
 				><span
-					><a href="/de/index" title="German (Deutsch)">de</a>
+					><a href="/" title="German (Deutsch)">de</a>
 					<a href="/" title="English">en</a>
-					<a href="/es/index" title="Spanish (Español)">es</a>
-					<a href="/fr/index" title="French (Français)">fr</a>
-					<a href="/pl/index" title="Polish (Polski)">pl</a>
-					<a href="/ru/index" title="Russian (Русский)">ru</a></span
+					<a href="/" title="Spanish (Español)">es</a>
+					<a href="/" title="French (Français)">fr</a>
+					<a href="/" title="Polish (Polski)">pl</a>
+					<a href="/" title="Russian (Русский)">ru</a></span
 				>
 			</div>
 		</div>
