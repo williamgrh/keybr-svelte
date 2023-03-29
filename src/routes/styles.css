@@ -1,33 +1,61 @@
-@import '@fontsource/mulish';
+@import '@fontsource/mulish/500.css';
+@import '@fontsource/ubuntu-mono';
 
 :root {
-	--color-bg-0: rgb(34, 32, 32);
+	--color-background: rgb(34, 32, 32);
 	--color-text: rgb(154, 153, 152);
-	--color-nav-link: rgb(154, 153, 152);
-	--color-icon: hsla(30, 1%, 60%, 0.85);
+	--color-icon: rgba(154, 153, 152, 0.85);
 	--color-separator: rgba(199, 209, 219, 0.1);
+	--color-button: rgb(255, 255, 255);
+	--color-button-background: rgb(104, 97, 97);
 
-	--font-body: 'Mulish', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	--color-section-title: rgba(154, 153, 152, 0.7);
+	--color-section-value: rgb(129, 128, 126);
+	--color-nav-link: rgb(154, 153, 152);
+	--color-nav-link--current: rgba(60, 57, 57, 0.5);
 
-	font-family: var(--font-body);
-	color: var(--color-text);
+	--color-delta--positive: rgb(104, 161, 98);
+	--color-delta--negative: rgb(161, 70, 78);
+
+	--color-key--included__color: rgb(0, 0, 0);
+	--color-key--included__confident-background: rgb(14, 218, 97);
+	--color-key--included__unconfident-background: rgb(204, 0, 0);
+	--color-key--included__background: rgba(0, 0, 0, 0);
+	--color-key--included__outline: rgba(0, 0, 0, 0);
+	--color-key--boosted__color: rgb(0, 0, 0);
+	--color-key--booster__unconfident-background: rgb(147, 65, 29);
+	--color-key--boosted__outline: rgb(255, 255, 255);
+	--color-key--uncalibrated__color: rgb(170, 170, 170);
+	--color-key--uncalibrated__background: rgb(47, 43, 43);
+	--color-key--uncalibrated__outline: rgba(0, 0, 0, 0);
+
+	--font-body: 'Mulish', 'Arial', sans-serif;
+	--font-monospace: 'Ubuntu Mono', monospace;
 }
 
-body {
-	min-height: 100vh;
-	background-color: var(--color-bg-0);
-	color: var(--color-text);
-	overflow-x: auto;
-	overflow-y: scroll;
-	margin: 0;
-	padding: 0;
+*,
+:after,
+:before {
+	box-sizing: border-box;
 }
 
 html {
 	font-family: var(--font-body);
 	font-size: 11px;
 	line-height: 1.5;
+}
+
+body {
+	font-family: var(--font-body);
+	font-weight: normal;
+	font-style: normal;
+	min-height: 100vh;
+	background-color: var(--color-background);
+	color: var(--color-text);
+	overflow-x: auto;
+	overflow-y: scroll;
+	margin: 0;
+	padding: 0;
 }
 
 @media (min-device-width: 1280px), (min-width: 1280px) {
@@ -120,10 +148,21 @@ html {
 	}
 }
 
+svg {
+	fill: var(--color-icon);
+	display: inline-block;
+	height: 1.8rem;
+	width: 1.8rem;
+	vertical-align: middle;
+	line-height: 3rem;
+	max-width: 100%;
+}
+
 button {
 	background: none;
 	border: none;
 	color: var(--color-text);
+	font-family: var(--font-body);
 	cursor: pointer;
 	display: inline-block;
 	font-size: 0.85rem;

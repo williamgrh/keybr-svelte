@@ -141,14 +141,8 @@
 		padding: 0 1rem;
 	}
 
-	.nav-item :global(svg) {
-		fill: var(--color-icon);
-		display: inline-block;
-		height: 1.8rem;
-		width: 1.8rem;
-		vertical-align: middle;
-		line-height: 3rem;
-		max-width: 100%;
+	.nav-item a:hover {
+		background-color: var(--color-nav-link--current);
 	}
 
 	.nav-item a span {
@@ -197,5 +191,10 @@
 		margin: 0;
 		padding: 1rem 0;
 		text-align: center;
+	}
+
+	.socials a:hover {
+		text-decoration: underline dotted var(--color-text);
+		background-color: unset;
 	}
 </style>
